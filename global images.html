@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- iconarchive.com-->
+<!--transform: rotate(),translate(deplaseaza), scale(mareste,micsoreaza), skew(deformare)
+box-shadow:0 0 5px 3px  img:hover efectu cu mousul-->
+<html lang="en">
+<head>
+    <title>global images CSS</title>
+    <link rel="icon" href="http://icons.iconarchive.com/icons/treetog/junior/64/camera-icon.png">
+    <style>
+        body {
+            background-color: #333;
+        }
+        #container{
+            border-bottom:10px solid black;
+            text-align: center;
+            padding-bottom:50px;
+            padding-top:25px;
+        }
+        img {
+            margin-left: -187px;
+            margin-right: -152px;
+            border: 5px solid blue;
+            padding-top: 25px;
+            padding-bottom: 20px;
+            background-color:#777;
+            box-shadow: 0 0 5px 3px #111;
+            transition: 1s;
+            
+        }
+        img:hover{
+            border-color:chartreuse;
+            background-color:coral;
+            transform: rotate(360deg);
+        }
+
+        
+        .i1 {
+            transform: rotate(45deg);
+        }
+        .i2 {
+            transform: rotate(55deg);
+        
+        }
+        .i3 {
+            transform:rotate(65deg);
+        }
+        .i4 {
+            transform: rotate(75deg);
+        }
+        .i5 {
+            transform: rotate(85deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img class="i1" src="https://picsum.photos/id/113/300/500" alt="">
+        <img class="i2" src="https://picsum.photos/id/112/300/500" alt="">
+        <img class="i3" src="https://picsum.photos/id/111/300/500" alt="">
+        <img class="i4" src="https://picsum.photos/id/110/300/500" alt="">
+        <img class="i5" src="https://picsum.photos/id/109/300/500" alt="">
+    </div>
+    
+</body>
+</html>
